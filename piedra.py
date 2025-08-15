@@ -45,10 +45,10 @@ ventana = Tk()
 ventana.title("piedra papel o tijeras")
 ventana.geometry("800x500")
 ventana.resizable(0,0)
-ventana.config(bg="white")
+ventana.config(bg="cyan")
 
 frame_1= Frame(ventana)
-frame_1.config(bg="ivory2", width=780,height=240)
+frame_1.config(bg="pink", width=780,height=240)
 frame_1.place(x=10,y=10)
 
 # imagen logo de la app
@@ -57,22 +57,22 @@ Label_logo=Label(frame_1,image=logo)
 Label_logo.place(x=10,y=10)
 # etiqueta para el titulode la app
 titulo = Label(frame_1,text=" Colegio San José de Guanenta")
-titulo.config(bg="yellow", fg="blue",font=("arial",16))
+titulo.config(bg="pink", fg="black",font=("arial",16))
 titulo.place(x=390,y=10)
 # Etiqueta para sunbtitulo 1 de la app
 subtitulo1 = Label(frame_1,text="  Especialidad en sistemas")
-subtitulo1.config(bg="yellow",fg="blue",font=("arial",12))
+subtitulo1.config(bg="pink",fg="black",font=("arial",12))
 subtitulo1.place(x=390,y=40)
 #Etiqueta subtitulo2
 subtitulo2 = Label(frame_1,text="PIDRA PAPEL O TIJERAS")
-subtitulo2.config(bg="ivory2",fg="blue",font=("arial",15),anchor=CENTER)
+subtitulo2.config(bg="ivory2",fg="black",font=("arial",15),anchor=CENTER)
 subtitulo2.place(x=390,y=70)
 
 #_-------------------------
 # frame 2 - panel de operaciones
 #--------------------------
 frame_2= Frame(ventana)
-frame_2.config(bg="ivory2", width=780,height=120)
+frame_2.config(bg="pink", width=780,height=120)
 frame_2.place(x=10,y=260)
 img_bt_piedra = PhotoImage(file="img/piedra.png")
 bt_piedra = Button(frame_2, image = img_bt_piedra, width = 105, height = 105, command=piedra_usuario)
@@ -93,7 +93,7 @@ frame_3.config(bg="ivory2", width=780,height=100)
 frame_3.place(x=10,y= 390)
 # area de texto
 t_resultados = Text(frame_3, width=50, height=3)
-t_resultados.config(bg="green", fg="white", font=("Courier", 20))
+t_resultados.config(bg="black", fg="white", font=("Courier", 20))
 t_resultados.pack()
 #Metodo principal quedespiega la ventana en pantalla
 ventana.mainloop()
